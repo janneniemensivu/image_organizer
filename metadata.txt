@@ -1,0 +1,81 @@
+filename,source path,destination path
+Fannyn lumia♥_002768.jpg,source/images/2013/Fannyn lumia♥_002768.jpg,destination/images/2013/Fannyn lumia♥_002768.jpg
+Fannyn lumia♥_002769.jpg,source/images/2013/Fannyn lumia♥_002769.jpg,destination/images/2013/Fannyn lumia♥_002769.jpg
+IMG_2732.JPG,source/images/2013/IMG_2732.JPG,destination/images/2013/IMG_2732.JPG
+IMG_2731.JPG,source/images/2013/IMG_2731.JPG,destination/images/2013/IMG_2731.JPG
+IMG_2367.jpg,source/images/2014/IMG_2367.jpg,destination/images/2014/IMG_2367.jpg
+IMG_5019.jpg,source/images/2014/IMG_5019.jpg,destination/images/2014/IMG_5019.jpg
+IMG_2366.jpg,source/images/2014/IMG_2366.jpg,destination/images/2014/IMG_2366.jpg
+IMG_1094.jpg,source/images/2014/IMG_1094.jpg,destination/images/2014/IMG_1094.jpg
+IMG_2365.jpg,source/images/2014/IMG_2365.jpg,destination/images/2014/IMG_2365.jpg
+IMG_1873.jpg,source/images/2014/IMG_1873.jpg,destination/images/2014/IMG_1873.jpg
+IMG_5157.jpg,source/images/2014/IMG_5157.jpg,destination/images/2014/IMG_5157.jpg
+IMG_5143_2.JPG,source/images/2014/IMG_5143_2.JPG,destination/images/2014/IMG_5143_2.JPG
+IMG_2893.jpg,source/images/2014/IMG_2893.jpg,destination/images/2014/IMG_2893.jpg
+IMG_2892.jpg,source/images/2014/IMG_2892.jpg,destination/images/2014/IMG_2892.jpg
+IMG_0934.jpg,source/images/2014/IMG_0934.jpg,destination/images/2014/IMG_0934.jpg
+IMG_2048.jpg,source/images/2014/IMG_2048.jpg,destination/images/2014/IMG_2048.jpg
+IMG_0927.jpg,source/images/2014/IMG_0927.jpg,destination/images/2014/IMG_0927.jpg
+IMG_2248.jpg,source/images/2014/IMG_2248.jpg,destination/images/2014/IMG_2248.jpg
+IMG_2046.jpg,source/images/2014/IMG_2046.jpg,destination/images/2014/IMG_2046.jpg
+IMG_1873_old.jpg,source/images/2014/IMG_1873_old.jpg,destination/images/2014/IMG_1873_old.jpg
+IMG_2044.jpg,source/images/2014/IMG_2044.jpg,destination/images/2014/IMG_2044.jpg
+IMG_2069.jpg,source/images/2014/IMG_2069.jpg,destination/images/2014/IMG_2069.jpg
+IMG_5016_2.jpg,source/images/2014/IMG_5016_2.jpg,destination/images/2014/IMG_5016_2.jpg
+IMG_1885.jpg,source/images/2014/IMG_1885.jpg,destination/images/2014/IMG_1885.jpg
+IMG_1886.jpg,source/images/2014/IMG_1886.jpg,destination/images/2014/IMG_1886.jpg
+IMG_7998.JPG,source/images/2015/IMG_7998.JPG,destination/images/2015/IMG_7998.JPG
+IMG_9829.jpg,source/images/2015/IMG_9829.jpg,destination/images/2015/IMG_9829.jpg
+IMG_9872.JPG,source/images/2015/IMG_9872.JPG,destination/images/2015/IMG_9872.JPG
+IMG_8010.jpg,source/images/2015/IMG_8010.jpg,destination/images/2015/IMG_8010.jpg
+IMG_9871.JPG,source/images/2015/IMG_9871.JPG,destination/images/2015/IMG_9871.JPG
+IMG_8161.jpg,source/images/2015/IMG_8161.jpg,destination/images/2015/IMG_8161.jpg
+IMG_8160.jpg,source/images/2015/IMG_8160.jpg,destination/images/2015/IMG_8160.jpg
+IMG_8185.jpg,source/images/2015/IMG_8185.jpg,destination/images/2015/IMG_8185.jpg
+IMG_8544_2.jpg,source/images/2015/IMG_8544_2.jpg,destination/images/2015/IMG_8544_2.jpg
+IMG_9847.JPG,source/images/2015/IMG_9847.JPG,destination/images/2015/IMG_9847.JPG
+IMG_9885.JPG,source/images/2015/IMG_9885.JPG,destination/images/2015/IMG_9885.JPG
+IMG_9846.JPG,source/images/2015/IMG_9846.JPG,destination/images/2015/IMG_9846.JPG
+IMG_8184.jpg,source/images/2015/IMG_8184.jpg,destination/images/2015/IMG_8184.jpg
+IMG_8423.JPG,source/images/2015/IMG_8423.JPG,destination/images/2015/IMG_8423.JPG
+IMG_5461.jpg,source/images/2015/IMG_5461.jpg,destination/images/2015/IMG_5461.jpg
+IMG_8183.jpg,source/images/2015/IMG_8183.jpg,destination/images/2015/IMG_8183.jpg
+IMG_8545.jpg,source/images/2015/IMG_8545.jpg,destination/images/2015/IMG_8545.jpg
+IMG_8182.jpg,source/images/2015/IMG_8182.jpg,destination/images/2015/IMG_8182.jpg
+IMG_8180.jpg,source/images/2015/IMG_8180.jpg,destination/images/2015/IMG_8180.jpg
+IMG_8181.jpg,source/images/2015/IMG_8181.jpg,destination/images/2015/IMG_8181.jpg
+IMG_9819.jpg,source/images/2015/IMG_9819.jpg,destination/images/2015/IMG_9819.jpg
+IMG_7997.JPG,source/images/2015/IMG_7997.JPG,destination/images/2015/IMG_7997.JPG
+20150818_065600947_iOS.jpg,source/images/2015/20150818_065600947_iOS.jpg,destination/images/2015/20150818_065600947_iOS.jpg
+IMG_9822.JPG,source/images/2015/IMG_9822.JPG,destination/images/2015/IMG_9822.JPG
+IMG_9821.JPG,source/images/2015/IMG_9821.JPG,destination/images/2015/IMG_9821.JPG
+IMG_9820.JPG,source/images/2015/IMG_9820.JPG,destination/images/2015/IMG_9820.JPG
+NOKIA Lumia 800_000179.jpg,source/images/2012/NOKIA Lumia 800_000179.jpg,destination/images/2012/NOKIA Lumia 800_000179.jpg
+NOKIA Lumia 800_000194.jpg,source/images/2012/NOKIA Lumia 800_000194.jpg,destination/images/2012/NOKIA Lumia 800_000194.jpg
+NOKIA Lumia 800_000198.jpg,source/images/2012/NOKIA Lumia 800_000198.jpg,destination/images/2012/NOKIA Lumia 800_000198.jpg
+NOKIA Lumia 800_000163.jpg,source/images/2012/NOKIA Lumia 800_000163.jpg,destination/images/2012/NOKIA Lumia 800_000163.jpg
+IMG_3825.jpeg,source/images/2019/IMG_3825.jpeg,destination/images/2019/IMG_3825.jpeg
+Unknown-1.jpeg,source/images/2020/Unknown-1.jpeg,destination/images/2020/Unknown-1.jpeg
+SAM_4656.JPG,source/images/2011/SAM_4656.JPG,destination/images/2011/SAM_4656.JPG
+IMG_0895.jpg,source/images/2011/IMG_0895.jpg,destination/images/2011/IMG_0895.jpg
+IMG_0894.jpg,source/images/2011/IMG_0894.jpg,destination/images/2011/IMG_0894.jpg
+IMG_0869.JPG,source/images/2011/IMG_0869.JPG,destination/images/2011/IMG_0869.JPG
+IMG_0896.jpg,source/images/2011/IMG_0896.jpg,destination/images/2011/IMG_0896.jpg
+IMG_0883.JPG,source/images/2011/IMG_0883.JPG,destination/images/2011/IMG_0883.JPG
+IMG_0897.jpg,source/images/2011/IMG_0897.jpg,destination/images/2011/IMG_0897.jpg
+IMG_0868.JPG,source/images/2011/IMG_0868.JPG,destination/images/2011/IMG_0868.JPG
+IMG_0893.jpg,source/images/2011/IMG_0893.jpg,destination/images/2011/IMG_0893.jpg
+IMG_0887.jpg,source/images/2011/IMG_0887.jpg,destination/images/2011/IMG_0887.jpg
+IMG_0886.jpg,source/images/2011/IMG_0886.jpg,destination/images/2011/IMG_0886.jpg
+IMG_0892.JPG,source/images/2011/IMG_0892.JPG,destination/images/2011/IMG_0892.JPG
+IMG_0884.JPG,source/images/2011/IMG_0884.JPG,destination/images/2011/IMG_0884.JPG
+IMG_0891.jpg,source/images/2011/IMG_0891.jpg,destination/images/2011/IMG_0891.jpg
+IMG_0885.jpg,source/images/2011/IMG_0885.jpg,destination/images/2011/IMG_0885.jpg
+IMG_0888.jpg,source/images/2011/IMG_0888.jpg,destination/images/2011/IMG_0888.jpg
+IMG_0874.jpg,source/images/2011/IMG_0874.jpg,destination/images/2011/IMG_0874.jpg
+IMG_0875.JPG,source/images/2011/IMG_0875.JPG,destination/images/2011/IMG_0875.JPG
+IMG_0871.jpg,source/images/2011/IMG_0871.jpg,destination/images/2011/IMG_0871.jpg
+IMG_0870.JPG,source/images/2011/IMG_0870.JPG,destination/images/2011/IMG_0870.JPG
+IMG_0872.JPG,source/images/2011/IMG_0872.JPG,destination/images/2011/IMG_0872.JPG
+IMG_0873.JPG,source/images/2011/IMG_0873.JPG,destination/images/2011/IMG_0873.JPG
+IMG_9169.jpg,source/images/2016/IMG_9169.jpg,destination/images/2016/IMG_9169.jpg
