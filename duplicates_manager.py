@@ -4,19 +4,15 @@ import shutil
 
 
 def generate_checksum(file_path):
-    """ Generate a SHA-1 hash for a file. """
+    """Generate a SHA-1 hash for a file."""
     with open(file_path, "rb") as f:
         return hashlib.sha1(f.read()).hexdigest()
 
 
 def manage_duplicates(src_path, dst_folder):
-    """ Move duplicate files to the specified folder. """
-    print("dst_folder: " + dst_folder)
+    """Move duplicate files to the specified folder."""
     filename = os.path.basename(src_path)
     dst_path = os.path.join(dst_folder, filename)
-
-    print("dst_path: " + dst_path)
-    print("filename: " + filename)
 
     if os.path.exists(dst_path):
         # File already exists in the destination folder

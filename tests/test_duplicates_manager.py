@@ -1,7 +1,8 @@
 import os
 import shutil
 import unittest
-from image_manager import ImageManager, manage_duplicates
+from image_manager import ImageManager
+from duplicates_manager import manage_duplicates
 
 class TestDuplicatesManager(unittest.TestCase):
     def setUp(self):
