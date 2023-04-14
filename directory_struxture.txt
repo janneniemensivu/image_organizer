@@ -1,0 +1,25 @@
+chatGPT/
+├── duplicates_manager.py
+├── exif_reader.py
+├── image_manager.py
+├── unknown_manager.py
+├── video_manager.py
+├── source/
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   ├── image3.jpg
+│   └── image4.jpg
+├── destination/
+│   ├── images/
+│   ├── videos/
+│   └── unknown/
+└── tests/
+    ├── test_data/
+    │   ├── test_image1.jpg
+    │   ├── test_image2.jpg
+    │   ├── test_video.mp4
+    │   └── test_unknown_data.txt
+    ├── test_image_manager.py
+    ├── test_duplicates_manager.py
+    ├── test_unknown_manager.py
+    └── test_video_manager.py
