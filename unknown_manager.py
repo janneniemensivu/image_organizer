@@ -2,22 +2,14 @@ import os
 import shutil
 
 
-def process_unknown_file(src_folder, dst_folder):
-    """ Move unknown files to the specified folder. """
-    dst_folder = os.path.join(dst_folder, "unknown")
-    if not os.path.exists(dst_folder):
-        os.makedirs(dst_folder)
+class UnknownManager:
+    def __init__(self, src_folder, dst_folder):
+        self.src = src_folder
+        self.dst = dst_folder
 
-    for filename in os.listdir(src_folder):
-        src_path = os.path.join(src_folder, filename)
+    def process_file(self, src_path):
+        dst_folder = os.path.join(self.dst, "unknown")
+        if not os.path.exists(dst_folder):
+            os.makedirs(dst_folder)
 
-        if os.path.isdir(src_path):
-            continue
-
-        ext = os.path.splitext(filename)[1].lower()
-
-        if ext in {".jpg", ".jpeg", ".gif", ".png"}:
-            continue
-
-        dst_path = os.path.join(dst_folder, filename)
-        shutil.move(src_path, dst_path)
+        shutil.move(src_path, os.path.join(dst_folder, os.path.basename(src_path)))

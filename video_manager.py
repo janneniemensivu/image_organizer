@@ -2,13 +2,14 @@ import os
 import shutil
 
 
-def process_video_file(src_path, dst_folder):
-    """ Move video files to the specified folder. """
-    filename = os.path.basename(src_path)
-    dst_folder = os.path.join(dst_folder, "videos")
+class VideoManager:
+    def __init__(self, src_folder, dst_folder):
+        self.src = src_folder
+        self.dst = dst_folder
 
-    if not os.path.exists(dst_folder):
-        os.makedirs(dst_folder)
+    def process_file(self, src_path):
+        dst_folder = os.path.join(self.dst, "videos")
+        if not os.path.exists(dst_folder):
+            os.makedirs(dst_folder)
 
-    dst_path = os.path.join(dst_folder, filename)
-    shutil.move(src_path, dst_path)
+        shutil.move(src_path, os.path.join(dst_folder, os.path.basename(src_path)))

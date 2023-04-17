@@ -10,15 +10,7 @@ class ImageManager:
         self.src = src_folder
         self.dst = dst_folder
 
-    def process_files(self):
-        """ Process the images in the source folder """
-        for subdir, dirs, files in os.walk(self.src):
-            for file in files:
-                src_path = os.path.join(subdir, file)
-                self.process_image_file(src_path)
-
-    def process_image_file(self, src_path):
-        """ Process a single image file """
+    def process_file(self, src_path):
         try:
             date = get_date_taken(src_path)
             year_folder = str(date.year)

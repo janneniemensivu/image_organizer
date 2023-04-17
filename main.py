@@ -1,12 +1,11 @@
 import os
-from image_manager import ImageManager
+from file_processor import FileProcessor
 
-def main():
-    src_folder = os.path.join("source")
-    dst_folder = os.path.join("destination")
-
-    image_manager = ImageManager(src_folder, dst_folder)
-    image_manager.process_files()
+#src_folder = os.path.join("chatGPT", "source")
+#dst_folder = os.path.join("chatGPT", "destination")
+src_folder = "source"
+dst_folder = "destination"
 
 if __name__ == "__main__":
-    main()
+    file_processor = FileProcessor(src_folder, dst_folder)
+    file_processor.process_files()
