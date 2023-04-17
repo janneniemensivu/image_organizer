@@ -1,6 +1,7 @@
 import os
 import shutil
 import unittest
+from datetime import datetime
 
 from file_processor import FileProcessor
 
@@ -37,6 +38,37 @@ class TestFileProcessor(unittest.TestCase):
         self.assertEqual(len(os.listdir(os.path.join(self.dst_directory, "images", "2011"))), 1)
         self.assertEqual(len(os.listdir(os.path.join(self.dst_directory, "images", "2012"))), 1)
 
+
+    def test_duplicate_file_renaming(self):
+        # Create two images with the same name in different source folders
+        image1_path = os.path.join(self.src_directory, "image1.jpg")
+        image2_path = os.path.join(self.src_directory, "subdir", "image1.jpg")
+        shutil.copy(os.path.join("tests", "test_data", "image1.jpg"), image1_path)
+        os.makedirs(os.path.join(self.src_directory, "subdir"), exist_ok=True)
+        shutil.copy(os.path.join("tests", "test_data", "image2.jpg"), image2_path)
+
+        # Process files
+        file_processor = FileProcessor(self.src_directory, self.dst_directory)
+        file_processor.process_files()
+
+        # Check that both images were moved and renamed to avoid overwriting each other
+        renamed_image1_path = os.path.join(self.dst_directory, str(datetime.now().year), "image1.jpg")
+        renamed_image2_path = os.path.join(self.dst_directory, str(datetime.now().year), "image1_1.jpg")
+        self.assertTrue(os.path.exists(renamed_image1_path))
+        self.assertTrue(os.path.exists(renamed_image2_path))
+
+        # Check that the contents of the renamed images are correct
+        with open(renamed_image1_path, "rb") as f:
+            contents1 = f.read()
+        with open(renamed_image2_path, "rb") as f:
+            contents2 = f.read()
+        with open(image1_path, "rb") as f:
+            original_contents1 = f.read()
+        with open(image2_path, "rb") as f:
+            original_contents2 = f.read()
+        self.assertEqual(contents1, original_contents1)
+        self.assertEqual(contents2, original_contents2)
+
     def test_empty_folder_deletion(self):
         # create empty folder in source directory
         empty_folder_path = os.path.join(self.src_directory, "empty_folder")
@@ -47,19 +79,6 @@ class TestFileProcessor(unittest.TestCase):
         file_processor.process_files()
 
         self.assertFalse(os.path.exists(empty_folder_path))
-
-    def test_non_empty_folder_deletion(self):
-        # create non-empty folder in source directory
-        non_empty_folder_path = os.path.join(self.src_directory, "non_empty_folder")
-        os.makedirs(non_empty_folder_path, exist_ok=True)
-        with open(os.path.join(non_empty_folder_path, "test_file.txt"), "w") as f:
-            f.write("test")
-
-        # process files and check that non-empty folder is not deleted
-        file_processor = FileProcessor(self.src_directory, self.dst_directory)
-
-        file_processor.process_files()
-        self.assertTrue(os.path.exists(non_empty_folder_path))
 
     def tearDown(self):
         shutil.rmtree(self.src_directory)

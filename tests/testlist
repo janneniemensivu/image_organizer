@@ -1,0 +1,5 @@
+python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_empty_folder_deletion
+python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_non_empty_folder_deletion
+python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_same_file_deletion
+python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_duplicate_file_renaming
+python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_duplicate_file_renaming
