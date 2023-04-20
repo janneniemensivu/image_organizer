@@ -1,10 +1,12 @@
 chatGPT/
-├── duplicates_manager.py
+├── __init__.py
+├── main.py
 ├── exif_reader.py
 ├── file_processor.py
 ├── image_manager.py
 ├── unknown_manager.py
 ├── video_manager.py
+├── duplicates_manager.py
 ├── source/
 │   ├── image1.jpg
 │   ├── image2.jpg
@@ -20,7 +22,4 @@ chatGPT/
     │   ├── test_image2.jpg
     │   ├── test_video.mp4
     │   └── test_unknown_data.txt
-    ├── test_image_manager.py
-    ├── test_duplicates_manager.py
-    ├── test_unknown_manager.py
-    └── test_video_manager.py
+    └── test_file_processor.py

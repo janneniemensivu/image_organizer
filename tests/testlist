@@ -3,3 +3,5 @@ python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFilePr
 python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_same_file_deletion
 python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_duplicate_file_renaming
 python3 -m unittest discover -s tests/ -p 'test_file_processor.py' -k TestFileProcessor.test_duplicate_file_renaming
+
+python3 -m unittest discover -s tests/ -p 'test_file_processor.py'

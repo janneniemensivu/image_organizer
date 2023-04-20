@@ -1,15 +1,33 @@
 import os
-import shutil
+from hachoir.parser import createParser
+from hachoir.metadata import extractMetadata
+from base_manager import BaseManager
 
+class VideoManager(BaseManager):
+    def __init__(self, dst_folder):
+        super().__init__(dst_folder)
 
-class VideoManager:
-    def __init__(self, src_folder, dst_folder):
-        self.src = src_folder
-        self.dst = dst_folder
+    def get_creation_date(self, src_path):
+        parser = createParser(src_path)
+        if not parser:
+            return None
+
+        try:
+            metadata = extractMetadata(parser)
+        except Exception as e:
+            print(f"Error extracting metadata from {src_path}: {e}")
+            return None
+
+        if metadata and metadata.has("creation_date"):
+            return metadata.get("creation_date")
+        else:
+            return None
 
     def process_file(self, src_path):
-        dst_folder = os.path.join(self.dst, "videos")
-        if not os.path.exists(dst_folder):
-            os.makedirs(dst_folder)
+        creation_date = self.get_creation_date(src_path)
 
-        shutil.move(src_path, os.path.join(dst_folder, os.path.basename(src_path)))
+        if creation_date:
+            year = str(creation_date.year)
+            super().process_file(src_path, year)
+        else:
+            super().handle_unsupported_file(src_path)
