@@ -1,4 +1,6 @@
+token
 source/
 destination/
 old/
-token
+__pycache__/
+env/
