@@ -3,6 +3,7 @@ from hachoir.parser import createParser
 from hachoir.metadata import extractMetadata
 from base_manager import BaseManager
 
+
 class VideoManager(BaseManager):
     def __init__(self, dst_folder):
         super().__init__(dst_folder)
@@ -23,11 +24,12 @@ class VideoManager(BaseManager):
         else:
             return None
 
-    def process_file(self, src_path):
+    def process_video_file(self, src_path):
         creation_date = self.get_creation_date(src_path)
 
         if creation_date:
             year = str(creation_date.year)
-            super().process_file(src_path, year)
+            print("Year in video file: " + year)
+            self.process_file(src_path, year)
         else:
-            super().handle_unsupported_file(src_path)
+            self.handle_unsupported_file(src_path)

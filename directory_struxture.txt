@@ -17,9 +17,15 @@ chatGPT/
 │   ├── videos/
 │   └── unknown/
 └── tests/
+    ├── __init__.py
     ├── test_data/
-    │   ├── test_image1.jpg
-    │   ├── test_image2.jpg
-    │   ├── test_video.mp4
+    │   ├── image1.jpg
+    │   ├── image2.jpg
+    │   ├── image3.jpg
+    │   ├── video1.mp4
+    │   ├── video2.mp4
     │   └── test_unknown_data.txt
+    ├── test_image_manager.py
+    ├── test_video_manager.py
+    ├── test_unknown_manager.py
     └── test_file_processor.py

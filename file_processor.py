@@ -14,6 +14,11 @@ class FileProcessor:
         os.makedirs(os.path.join(dst_folder, "unknown"), exist_ok=True)
         os.makedirs(os.path.join(dst_folder, "videos"), exist_ok=True)
 
+        self.image_manager = ImageManager(os.path.join(dst_folder, "images"))
+        self.video_manager = VideoManager(os.path.join(dst_folder, "videos"))
+        self.unknown_manager = UnknownManager(
+            os.path.join(dst_folder, "unknown"))
+
     def process_files(self):
         # Process all files in the source directory
         for subdir, dirs, files in os.walk(self.src_folder):
@@ -22,22 +27,21 @@ class FileProcessor:
                 self.process_file(src_path)
 
         # Delete empty directories in the source directory
-        print("to delete empty folders in src")
         self.delete_empty_dirs(self.src_folder)
-        print("empty folders in src should have been deleted")
 
     def process_file(self, src_path):
         file_type = self.get_file_type(src_path)
 
         if file_type == "image":
-            manager = ImageManager(os.path.join(self.dst_folder, "images"), self.src_folder)
-            manager.process_image_file(src_path)
-        elif file_type == "video":
-            manager = VideoManager(self.dst_folder)
-        else:
-            manager = UnknownManager(self.dst_folder)
+            self.image_manager.process_image_file(src_path)
 
-        #manager.process_file(src_path)
+        elif file_type == "video":
+            self.video_manager.process_video_file(src_path)
+
+        else:
+            self.unknown_manager = UnknownManager(self.dst_folder)
+
+        # manager.process_file(src_path)
 
     def get_file_type(self, src_path):
         extension = os.path.splitext(src_path)[1].lower()
@@ -59,6 +63,3 @@ class FileProcessor:
                     if any(filename.startswith(".") for filename in os.listdir(dir_path)):
                         continue  # skip deleting directory
                     os.rmdir(dir_path)
-
-
-

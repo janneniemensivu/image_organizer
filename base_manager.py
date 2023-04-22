@@ -1,7 +1,8 @@
 import os
 import shutil
-import datetime
+from datetime import datetime
 from exif_reader import InvalidFileException
+
 
 class BaseManager:
     def __init__(self, dst_folder):
@@ -22,7 +23,6 @@ class BaseManager:
         shutil.move(src_path, dst_path)
 
     def process_file(self, src_path, year):
-        print("enter process_file: " + str(src_path) + ", " + year) 
         try:
             dst_dir = os.path.join(self.dst_folder, year)
             self.create_directory_if_not_exists(dst_dir)
@@ -42,7 +42,8 @@ class BaseManager:
             self.handle_unsupported_file(src_path)
 
     def handle_unsupported_file(self, src_path):
-        dst_path = os.path.join(self.dst_folder, 'unknown_year', os.path.basename(src_path))
+        dst_path = os.path.join(
+            self.dst_folder, 'unknown_year', os.path.basename(src_path))
         if self.files_have_same_content(src_path, dst_path):
             os.remove(src_path)
             return
