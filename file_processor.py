@@ -14,13 +14,15 @@ class FileProcessor:
         os.makedirs(os.path.join(dst_folder, "unknown"), exist_ok=True)
         os.makedirs(os.path.join(dst_folder, "videos"), exist_ok=True)
 
-        self.image_manager = ImageManager(os.path.join(dst_folder, "images"))
-        self.video_manager = VideoManager(os.path.join(dst_folder, "videos"))
+        self.image_manager = ImageManager(
+            os.path.join(self.dst_folder, "images"))
+        self.video_manager = VideoManager(
+            os.path.join(self.dst_folder, "videos"))
         self.unknown_manager = UnknownManager(
-            os.path.join(dst_folder, "unknown"))
+            os.path.join(self.dst_folder, "unknown"))
 
     def process_files(self):
-        # Process all files in the source directory
+        # Process all files in the source director
         for subdir, dirs, files in os.walk(self.src_folder):
             for file in files:
                 src_path = os.path.join(subdir, file)
@@ -39,7 +41,7 @@ class FileProcessor:
             self.video_manager.process_video_file(src_path)
 
         else:
-            self.unknown_manager = UnknownManager(self.dst_folder)
+            self.unknown_manager.process_unknown_file(src_path)
 
         # manager.process_file(src_path)
 
